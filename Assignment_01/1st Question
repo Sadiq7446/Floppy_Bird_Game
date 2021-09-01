@@ -1,0 +1,43 @@
+# Write a Python class named Student with two instances student1, student2 and assign given values to the said instances attributes.
+# Print all the attributes of student1, student2 instances with their values.
+
+class Student :
+#   *** THIS IS THE CODE FOR DATA ALREADY ENTERED ***
+    Course = "AIML"
+    SEC = "B22"
+student1 = Student()
+student2 = Student()
+
+student1.student_name = 'Sadiq'
+student2.student_name = 'Ahamed'
+
+student1.marks_of_subject1 = 99
+student2.marks_of_subject1 = 98
+
+student1.marks_of_subject2 = 94
+student2.marks_of_subject2 = 92
+
+student1.marks_of_subject3 = 97 
+student2.marks_of_subject3 = 95
+
+'''
+  **** IF WANT TO GIVE DATA AS "INPUT" USE THIS CODE INSTEAD ****
+    Course = input("Enter your Course : ")
+    SEC = input("Enter your Section : ")
+student1 = Student()
+student2 = Student()
+
+student1.student_name = input("Enter student1 name : ")
+student2.student_name = input("Enter student2 name : ")
+student1.marks_of_subject1 = input("Enter student1's marks of Subject1 : ")
+student2.marks_of_subject1 = input("Enter student2's marks of Subject1 : ")
+student1.marks_of_subject2 = input("Enter student1's marks of Subject2 : ")
+student2.marks_of_subject2 = input("Enter student2's marks of Subject2 : ")
+student1.marks_of_subject3 = input("Enter student1's marks of Subject3 : ")
+student2.marks_of_subject3 = input("Enter student2's marks of Subject3 : ")  
+'''
+
+store=[student1, student2] 
+for i in store : 
+    for j in i.__dict__: 
+        print(j,'is',getattr(i,j)) 

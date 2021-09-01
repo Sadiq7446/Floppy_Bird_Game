@@ -1,0 +1,17 @@
+# Create a class Point and initialize with the user defined values and write a method to calculate the distance of the point from the origin
+
+class Point:
+    def __init__(self, x, y) :
+        self.x = x
+        self.y = y
+
+# Took help from internet to find the formula of distance_from_origin to (x,y).
+    def distance_from_origin(x, y) :
+        return ((x)**2 + (y)**2)**(1/2)
+        
+x = int(input("Enter the x-coordinate: "))
+y = int(input("Enter the y-coordinate: "))
+
+
+print("The Distance of the point from the Origin is :",Point.distance_from_origin(x, y))
+print("Round Figure :",int(Point.distance_from_origin(x, y)))
