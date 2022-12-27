@@ -1,3 +1,3 @@
 # Floppy Bird Game
 
-This is a mini-project I did to understand and learn python better
+This is a mini-project I did to Learn and Understand Pygame module of python.
